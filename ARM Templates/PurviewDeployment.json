@@ -29,6 +29,12 @@
         "privateDnsZoneIdPurview": {
             "type": "string",
             "metadata": {
+                "description": "Specifies the ID of the private dns zone for the purview account."
+            }
+        },
+        "privateDnsZoneIdPurviewStudio": {
+            "type": "string",
+            "metadata": {
                 "description": "Specifies the ID of the private dns zone for the purview portal."
             }
         },
@@ -69,6 +75,7 @@
         "keyVaultResourceGroupName": "[if(empty(variables('keyVaultId')), resourceGroup().name, split(variables('keyVaultId'), '/')[4])]",
         "subnetId": "[parameters('subnetId')]",
         "privateDnsZoneIdPurview": "[parameters('privateDnsZoneIdPurview')]",
+        "privateDnsZoneIdPurviewStudio": "[parameters('privateDnsZoneIdPurviewStudio')]",
         "privateDnsZoneIdBlob": "[parameters('privateDnsZoneIdBlob')]",
         "privateDnsZoneIdQueue": "[parameters('privateDnsZoneIdQueue')]",
         "privateDnsZoneIdNamespace": "[parameters('privateDnsZoneIdNamespace')]",
@@ -185,7 +192,7 @@
                     {
                         "name": "[concat(variables('privateEndpointNamePortal'), '-aRecord')]",
                         "properties": {
-                            "privateDnsZoneId": "[variables('privateDnsZoneIdPurview')]"
+                            "privateDnsZoneId": "[variables('privateDnsZoneIdPurviewStudio')]"
                         }
                     }
                 ]
