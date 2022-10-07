@@ -145,7 +145,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[variables('privateEndpointNamePortal')]",
             "tags": "[variables('tags')]",
             "dependsOn": [
@@ -173,7 +173,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[concat(variables('privateEndpointNamePortal'), '/aRecord')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/privateEndpoints', variables('privateEndpointNamePortal'))]"
@@ -192,7 +192,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[variables('privateEndpointNameAccount')]",
             "tags": "[variables('tags')]",
             "dependsOn": [
@@ -220,7 +220,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[concat(variables('privateEndpointNameAccount'), '/aRecord')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/privateEndpoints', variables('privateEndpointNameAccount'))]"
@@ -239,7 +239,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[variables('privateEndpointNameBlob')]",
             "tags": "[variables('tags')]",
             "dependsOn": [
@@ -267,7 +267,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[concat(variables('privateEndpointNameBlob'), '/aRecord')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/privateEndpoints', variables('privateEndpointNameBlob'))]"
@@ -286,7 +286,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[variables('privateEndpointNameQueue')]",
             "tags": "[variables('tags')]",
             "dependsOn": [
@@ -314,7 +314,7 @@
         },
         {
             "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
-            "apiVersion": "2020-05-01",
+            "apiVersion": "2020-11-01",
             "name": "[concat(variables('privateEndpointNameQueue'), '/aRecord')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/privateEndpoints', variables('privateEndpointNameQueue'))]"
