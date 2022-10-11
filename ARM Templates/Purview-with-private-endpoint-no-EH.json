@@ -81,7 +81,7 @@
     "resources": [
         {
             "type": "Microsoft.Purview/accounts",
-            "apiVersion": "2020-12-01-preview",
+            "apiVersion": "2021-12-01",
             "name": "[variables('purviewName')]",
             "tags": "[variables('tags')]",
             "location": "[if(contains(variables('purviewRegions'), variables('location')), variables('location'), 'westeurope')]",
