@@ -93,10 +93,10 @@
                 "capacity": 1
             },
             "properties": {
-                "friendlyName": "[variables('purviewName')]",
-                "publicNetworkAccess": "Disabled",
-		"managedResourcesPublicNetworkAccess": "Disabled",
-                "managedResourceGroupName": "[variables('purviewName')]"
+		    "friendlyName": "[variables('purviewName')]",
+		    "publicNetworkAccess": "Disabled",
+		    "managedResourcesPublicNetworkAccess": "Disabled",
+		    "managedResourceGroupName": "[variables('purviewName')]"
             }
         },
         {
