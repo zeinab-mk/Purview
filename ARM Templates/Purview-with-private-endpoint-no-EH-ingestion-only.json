@@ -95,7 +95,7 @@
             "properties": {
                 "friendlyName": "[variables('purviewName')]",
                 "publicNetworkAccess": "Disabled",
-	    "managedResourcesPublicNetworkAccess": "Disabled",
+		"managedResourcesPublicNetworkAccess": "Disabled",
                 "managedResourceGroupName": "[variables('purviewName')]"
             }
         },
